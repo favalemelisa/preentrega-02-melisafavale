@@ -9,8 +9,14 @@
 }
 
 .collapse {
+    height: 150px;
     display: flex;
     justify-content: space-around;
+}
+
+
+.navbar-nav{
+    font-size: 22px;
 }
 
 .nav-link:hover {
@@ -31,7 +37,9 @@
     padding: 16px;
 }
 
-header {}
+.main-clases section{
+    padding: 40px;
+}
 
 footer {
     padding: 16px;
@@ -50,22 +58,22 @@ footer {
     ;
 }
 
-.info-clases{
+.info-clases {
     font-size: 30px;
 }
 
 .grilla-clases {
+    height: 1000px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-items: center;
     grid-template-areas:
-        "div-clases-practicas div-clases-practicas div-promo1"
-        "div-clases-practicas div-clases-practicas div-promo1"
-        "div-clases-practicas div-clases-practicas div-promo2"
-        "div-clases-teoricas div-clases-teoricas div-promo2"
-        "div-clases-teoricas div-clases-teoricas div-promo3"
-        "div-clases-teoricas div-clases-teoricas div-promo3";
+        "div-clases-practicas div-clases-practicas div-clases-practicas div-clases-teoricas div-clases-teoricas div-clases-teoricas"
+        "div-clases-practicas div-clases-practicas div-clases-practicas div-clases-teoricas div-clases-teoricas div-clases-teoricas"
+        "div-promo1 div-promo1 div-promo2 div-promo2 div-promo3 div-promo3";
 }
 
 .div-clases-practicas {
@@ -94,7 +102,7 @@ footer {
     grid-area: div-promo3;
 }
 
-.img-promos{
-    height: 500px;
+.img-promos {
+    width: 500px;
     margin: 16px;
 }

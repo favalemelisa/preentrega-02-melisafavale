@@ -5,7 +5,7 @@
 }
 
 .logoticomar {
-    height: 80px;
+    height: 70px;
 }
 
 .collapse {
@@ -34,7 +34,7 @@
 }
 
 .titulos {
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -64,7 +64,7 @@ footer {
 }
 
 .info-clases {
-    font-size: 30px;
+    font-size: 22px;
     text-align: justify;
 }
 
@@ -84,7 +84,12 @@ footer {
   .div-promo0 { grid-area: div-promo0; }
 
   .img-promos{
-    height: 80%;
+    width: 300px;
+    margin: 16px;
+  }
+
+  .img-clases{
+    width: 100%;
   }
 
   .formulario-contacto{
@@ -110,4 +115,32 @@ text-align: center;
   .card-text{
     font-size: 20px;
     text-align: center;
+  }
+
+  .main-sobre-ticomar{
+    width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+ h1{
+    text-align: center;
+  }
+
+  .main-sobre-ticomar img{
+    margin: 16px;
+    width: 60%;
+  }
+
+  .titulo-sobre-ticomar{
+    font-size: 26px;
+  }
+
+  .subtitulo-sobre-ticomar{
+    font-size: 22px;
+  }
+
+  .texto-sobre-ticomar{
+    text-align: justify;
   }

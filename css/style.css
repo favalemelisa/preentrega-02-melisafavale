@@ -12,11 +12,19 @@
     height: 150px;
     display: flex;
     justify-content: space-around;
+
+}
+
+.container-fluid{
+    box-shadow: 0px 6px 10px 0px #0000002b;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
 }
 
 
 .navbar-nav{
-    font-size: 22px;
+    font-size: 16px;
+
 }
 
 .nav-link:hover {
@@ -26,8 +34,6 @@
 }
 
 .titulos {
-    background-color: rgb(31, 31, 31);
-    color: white;
     font-size: 40px;
     text-align: center;
 }
@@ -36,8 +42,7 @@
     width: 100vw;
     padding: 16px;
 }
-
-.main-clases section{
+.main-clases {
     padding: 40px;
 }
 
@@ -60,49 +65,49 @@ footer {
 
 .info-clases {
     font-size: 30px;
+    text-align: justify;
 }
 
 .grilla-clases {
-    height: 1000px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
-    grid-auto-flow: row;
-    justify-items: center;
     grid-template-areas:
-        "div-clases-practicas div-clases-practicas div-clases-practicas div-clases-teoricas div-clases-teoricas div-clases-teoricas"
-        "div-clases-practicas div-clases-practicas div-clases-practicas div-clases-teoricas div-clases-teoricas div-clases-teoricas"
-        "div-promo1 div-promo1 div-promo2 div-promo2 div-promo3 div-promo3";
-}
+      "div-promo3 div-promo2 div-info-clases div-info-clases"
+      "div-promo1 div-promo0 div-info-clases div-info-clases";
+  }
+  .div-info-clases { grid-area: div-info-clases; }
+  .div-promo3 { grid-area: div-promo3; }
+  .div-promo2 { grid-area: div-promo2; }
+  .div-promo1 { grid-area: div-promo1; }
+  .div-promo0 { grid-area: div-promo0; }
 
-.div-clases-practicas {
-    grid-area: div-clases-practicas;
-    background-color: gray;
+  .img-promos{
+    height: 80%;
+  }
+
+  .formulario-contacto{
+    
+text-align: center;
+  }
+
+  .mapa{
     margin: 16px;
-    height: max-content;
-}
+  }
 
-.div-clases-teoricas {
-    grid-area: div-clases-teoricas;
-    background-color: gray;
-    margin: 16px;
-    height: max-content;
-}
+  .señales{
+    margin: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
-.div-promo1 {
-    grid-area: div-promo1;
-}
+  .card{
+    margin: 10px;
+  }
 
-.div-promo2 {
-    grid-area: div-promo2;
-}
-
-.div-promo3 {
-    grid-area: div-promo3;
-}
-
-.img-promos {
-    width: 500px;
-    margin: 16px;
-}
+  .card-text{
+    font-size: 20px;
+    text-align: center;
+  }

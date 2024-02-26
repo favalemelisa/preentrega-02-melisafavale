@@ -4,31 +4,37 @@
     font-family: sans-serif;
 }
 
-.logoticomar {
-    height: 70px;
-}
+
 
 .collapse {
-    height: 150px;
+    height: 100px;
     display: flex;
     justify-content: space-around;
 
 }
 
+.navbar-brand{
+max-width: 200px;
+}
+
+.navbar-brand img {
+  max-width: 100%;
+}
+
+.navbar-nav {
+  font-size: 16px;
+  width: 400px;
+  margin-right: 20px;
+  justify-content: space-between;
+}
+
 .container-fluid{
     box-shadow: 0px 6px 10px 0px #0000002b;
     margin-bottom: 1rem;
-    flex-wrap: wrap;
 }
 
-
-.navbar-nav{
-    font-size: 16px;
-
-}
 
 .nav-link:hover {
-    text-decoration: solid;
     text-decoration: underline;
 
 }
@@ -42,6 +48,16 @@
     width: 100vw;
     padding: 16px;
 }
+
+.header-img-mobile {
+  width: 100vw;
+  padding: 16px;
+}
+
+.header-img-mobile{
+  display: none;
+}
+
 .main-clases {
     padding: 40px;
 }
@@ -49,18 +65,14 @@
 footer {
     padding: 16px;
     display: flex;
-    height: 40px;
+    height: 100px;
     justify-content: space-between;
+    align-items: center;
 
 }
 
 .footer-redes {
     height: 30px;
-}
-
-.footer-redes:hover {
-    border: 5px black;
-    ;
 }
 
 .info-clases {
@@ -69,23 +81,30 @@ footer {
 }
 
 .grilla-clases {
+  width: 1000px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
+    justify-items: center;
     grid-template-areas:
       "div-promo3 div-promo2 div-info-clases div-info-clases"
       "div-promo1 div-promo0 div-info-clases div-info-clases";
   }
-  .div-info-clases { grid-area: div-info-clases; }
-  .div-promo3 { grid-area: div-promo3; }
-  .div-promo2 { grid-area: div-promo2; }
-  .div-promo1 { grid-area: div-promo1; }
-  .div-promo0 { grid-area: div-promo0; }
+  .div-info-clases { grid-area: div-info-clases;  }
+  .div-promo3 { grid-area: div-promo3; display: flex;
+    justify-content: center;}
+  .div-promo2 { grid-area: div-promo2; display: flex;
+    justify-content: center;}
+  .div-promo1 { grid-area: div-promo1; display: flex;
+    justify-content: center;}
+  .div-promo0 { grid-area: div-promo0; display: flex;
+    justify-content: center;}
 
   .img-promos{
-    width: 300px;
-    margin: 16px;
+    max-width: 90%; 
+    height: auto; 
+    margin: 20px;
   }
 
   .img-clases{
@@ -144,3 +163,74 @@ text-align: center;
   .texto-sobre-ticomar{
     text-align: justify;
   }
+
+  @media(max-width: 460px){
+    .header-img-mobile {
+      display: block;
+    }
+    .header-img{
+      display: none;
+    }
+    .navbar-brand img {
+      max-width: 50%;
+  }
+  .señales{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-index{
+    flex-direction: column;
+  }
+
+  .main-index {
+    flex-direction: column;
+    align-items: center;}
+  }
+
+  @media(max-width: 600px){
+  .señales{
+    display: flex;
+    flex-direction: column;
+  }
+  }
+
+  .div-info-academia{
+    background-color: rgb(206, 206, 206);
+    margin: 18px;
+    padding: 10px;
+    border: solid 2px rgb(193, 193, 193);
+  }
+
+  .main-clases{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .main-index{
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+
+  .primera-vez-y-reno{
+    width: 220px;
+    color: white;
+    background-color: rgb(168, 168, 168);
+  }
+
+  article h2{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .info-licencia{
+    text-align: center;
+    font-size: 16px;
+  }
+
+  @media(max-width: 600px) {
+    
+    }

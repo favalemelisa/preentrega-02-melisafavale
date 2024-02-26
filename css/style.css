@@ -1,20 +1,20 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 
 
 .collapse {
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
 
 }
 
-.navbar-brand{
-max-width: 200px;
+.navbar-brand {
+  max-width: 200px;
 }
 
 .navbar-brand img {
@@ -28,25 +28,25 @@ max-width: 200px;
   justify-content: space-between;
 }
 
-.container-fluid{
-    box-shadow: 0px 6px 10px 0px #0000002b;
-    margin-bottom: 1rem;
+.container-fluid {
+  box-shadow: 0px 6px 10px 0px #0000002b;
+  margin-bottom: 1rem;
 }
 
 
 .nav-link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 
 }
 
 .titulos {
-    font-size: 30px;
-    text-align: center;
+  font-size: 30px;
+  text-align: center;
 }
 
 .header-img {
-    width: 100vw;
-    padding: 16px;
+  width: 100vw;
+  padding: 16px;
 }
 
 .header-img-mobile {
@@ -54,183 +54,230 @@ max-width: 200px;
   padding: 16px;
 }
 
-.header-img-mobile{
+.header-img-mobile {
   display: none;
 }
 
 .main-clases {
-    padding: 40px;
+  padding: 40px;
 }
 
 footer {
-    padding: 16px;
-    display: flex;
-    height: 100px;
-    justify-content: space-between;
-    align-items: center;
+  padding: 16px;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
 
 }
 
 .footer-redes {
-    height: 30px;
+  height: 30px;
 }
 
 .info-clases {
-    font-size: 22px;
-    text-align: justify;
+  font-size: 22px;
+  text-align: justify;
 }
 
 .grilla-clases {
+  background-color: rgb(234, 234, 234);
+  padding: 10px;
   width: 1000px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    justify-items: center;
-    grid-template-areas:
-      "div-promo3 div-promo2 div-info-clases div-info-clases"
-      "div-promo1 div-promo0 div-info-clases div-info-clases";
-  }
-  .div-info-clases { grid-area: div-info-clases;  }
-  .div-promo3 { grid-area: div-promo3; display: flex;
-    justify-content: center;}
-  .div-promo2 { grid-area: div-promo2; display: flex;
-    justify-content: center;}
-  .div-promo1 { grid-area: div-promo1; display: flex;
-    justify-content: center;}
-  .div-promo0 { grid-area: div-promo0; display: flex;
-    justify-content: center;}
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  justify-items: center;
+  grid-template-areas:
+    "div-promo3 div-promo2 div-info-clases div-info-clases"
+    "div-promo1 div-promo0 div-info-clases div-info-clases";
+}
 
-  .img-promos{
-    max-width: 90%; 
-    height: auto; 
-    margin: 20px;
+.div-info-clases {
+  grid-area: div-info-clases;
+}
+
+.div-promo3 {
+  grid-area: div-promo3;
+  display: flex;
+  justify-content: center;
+}
+
+.div-promo2 {
+  grid-area: div-promo2;
+  display: flex;
+  justify-content: center;
+}
+
+.div-promo1 {
+  grid-area: div-promo1;
+  display: flex;
+  justify-content: center;
+}
+
+.div-promo0 {
+  grid-area: div-promo0;
+  display: flex;
+  justify-content: center;
+}
+
+.img-promos {
+  max-width: 90%;
+  height: auto;
+  margin: 20px;
+}
+
+.img-clases {
+  width: 100%;
+}
+
+.formulario-contacto {
+  width: 600px;
+  text-align: center;
+}
+
+.section-contacto {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.mapa {
+  margin-top: 40px;
+
+}
+
+.señales {
+  margin: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card {
+  margin: 10px;
+}
+
+.card-text {
+  font-size: 20px;
+  text-align: center;
+}
+
+.main-sobre-ticomar {
+  width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  text-align: center;
+}
+
+.main-sobre-ticomar img {
+  margin: 16px;
+  width: 60%;
+}
+
+.titulo-sobre-ticomar {
+  font-size: 26px;
+}
+
+.subtitulo-sobre-ticomar {
+  font-size: 22px;
+}
+
+.texto-sobre-ticomar {
+  text-align: justify;
+}
+
+@media(max-width: 460px) {
+  .header-img-mobile {
+    display: block;
   }
 
-  .img-clases{
-    width: 100%;
+  .header-img {
+    display: none;
   }
 
-  .formulario-contacto{
-    
-text-align: center;
+  .navbar-brand img {
+    max-width: 50%;
   }
 
-  .mapa{
-    margin: 16px;
-  }
-
-  .señales{
-    margin: 32px;
+  .señales {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .card{
-    margin: 10px;
-  }
-
-  .card-text{
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .main-sobre-ticomar{
-    width: 900px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-  }
-
- h1{
-    text-align: center;
-  }
-
-  .main-sobre-ticomar img{
-    margin: 16px;
-    width: 60%;
-  }
-
-  .titulo-sobre-ticomar{
-    font-size: 26px;
-  }
-
-  .subtitulo-sobre-ticomar{
-    font-size: 22px;
-  }
-
-  .texto-sobre-ticomar{
-    text-align: justify;
-  }
-
-  @media(max-width: 460px){
-    .header-img-mobile {
-      display: block;
-    }
-    .header-img{
-      display: none;
-    }
-    .navbar-brand img {
-      max-width: 50%;
-  }
-  .señales{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .main-index{
     flex-direction: column;
   }
 
   .main-index {
     flex-direction: column;
-    align-items: center;}
   }
 
-  @media(max-width: 600px){
-  .señales{
-    display: flex;
+  .main-index {
     flex-direction: column;
-  }
-  }
-
-  .div-info-academia{
-    background-color: rgb(206, 206, 206);
-    margin: 18px;
-    padding: 10px;
-    border: solid 2px rgb(193, 193, 193);
-  }
-
-  .main-clases{
-    flex-direction: column;
-    display: flex;
     align-items: center;
   }
+}
 
-  .main-index{
+@media(max-width: 600px) {
+  .señales {
     display: flex;
-    justify-content: space-evenly;
-
+    flex-direction: column;
   }
+}
 
-  .primera-vez-y-reno{
-    width: 220px;
-    color: white;
-    background-color: rgb(168, 168, 168);
-  }
+.div-info-academia {
+  background-color: rgb(231, 230, 230);
+  margin: 18px;
+  padding: 10px;
+  border: solid 2px rgb(193, 193, 193);
+}
 
-  article h2{
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-  }
+.main-clases {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
 
-  .info-licencia{
-    text-align: center;
-    font-size: 16px;
-  }
+.main-index {
+  display: flex;
+  justify-content: space-evenly;
 
-  @media(max-width: 600px) {
-    
-    }
+}
+
+.primera-vez-y-reno {
+  width: 220px;
+  color: white;
+  background-color: rgb(168, 168, 168);
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+article h2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.info-licencia {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+}
+
+@media(max-width: 600px) {}
+
+.contenido-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+button {
+  align-self: center;
+}
